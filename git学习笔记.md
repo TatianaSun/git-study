@@ -384,6 +384,7 @@ $ git archive
 
 ---
 ## git 使用规范流程
+
 - 第一步: 新建分支 
   首先，每次开发新功能，都应该新建一个单独的分支
 
@@ -642,9 +643,10 @@ $ git push origin --tags
 ```
 ---
 ### 工作实战
+你在公司中参与公司现有的项目,要先把公司的项目代码拉下来
 
 - 在你想创建项目的文件夹下git bash, 在线上项目仓库复制它的仓库地址
-- git clone 复制项目地址, 把项目复制到本地,然后 npm install
+- git clone 复制项目地址, 把项目复制到本地,然后初始化 npm install
 - git checkout -b testing6 创建跟项目相同的同名分支testing6分支,并切换到该分支
 - git pull origin testing6 从远程testing6分支拉取代码到本地,并与本地分支testing6合并,如果也有冲突就解决冲突
 - git fetch  将远程主机的更新，全部取回本地。
