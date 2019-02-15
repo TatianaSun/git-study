@@ -10,10 +10,11 @@
 
 ### 常用操作
 
-- 先在github上创建自己的仓库,然后git init ,让你的文件被git 管理起来
+- 先在本地你想要新建项目的文件夹中git init ,让你的文件被git 管理起来
 - 然后git status 查看文件状态(红色)
 - git add --all 把文件添加进暂存区
 - git commit -m ":tada:Initial commit" 提交内容可以添加emotion表情
+- 在github上创建自己的仓库
 - git remote add origin `你在github上创建的项目仓库地址,就是那串http://XxXX.git` 告诉git推到哪儿
 - git push -u origin master   origin就是仓库地址的别名,master 主分支
   + 第一次这样提交,以后再提交直接 git push 就可以了
@@ -648,7 +649,7 @@ $ git push origin --tags
 - 在你想创建项目的文件夹下git bash, 在线上项目仓库复制它的仓库地址
 - git clone 复制项目地址, 把项目复制到本地,然后初始化 npm install
 - git checkout -b testing6 创建跟项目相同的同名分支testing6分支,并切换到该分支
-- git pull origin testing6 从远程testing6分支拉取代码到本地,并与本地分支testing6合并,如果也有冲突就解决冲突
+- git pull origin testing6 从远程testing6分支拉取代码到本地,并与本地分支testing6合并,如果也有冲突就解决冲突,解决冲突后要看一下状态,添加并commit一次
 - git fetch  将远程主机的更新，全部取回本地。
 
 - 当你操作完代码,(新增功能或者修改完bug 的时候) 先查看状态,git status ,再添加到本地暂存区,git add .
